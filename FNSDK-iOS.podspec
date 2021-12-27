@@ -169,7 +169,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'FNGDTAdpter' do |s|
      s.ios.deployment_target = '9.0'
      s.vendored_frameworks =  'FNSDK/FNGDTAdpter/FNGDTAdpter.framework'
-           s.dependency 'FNSDK-iOS/FNSDK'
+     s.dependency 'FNSDK-iOS/FNSDK'
      s.dependency 'GDTMobSDK', '4.13.32'
   end
 
@@ -177,11 +177,8 @@ Pod::Spec.new do |spec|
  # KS
   spec.subspec 'FNKSAdpter' do |s|
      s.ios.deployment_target = '9.0'
-     s.vendored_frameworks =  'FNSDK/FNKSAdpter/FNKSAdpter.framework'
-           s.dependency 'FNSDK-iOS/FNSDK'
-                s.source       = { :http => "https://static.yximgs.com/udata/pkg/KSAdSDKTarGz/KSAdSDK-framework-content-3.3.26-544.tar.gz"     }
-                s.resource = 'https://static.yximgs.com/udata/pkg/KSAdSDKTarGz/KSAdSDK-framework-content-3.3.26-544.tar.gz'
-     s.dependency 'KSAdSDKFull','3.3.26'
+     s.vendored_frameworks =  'FNSDK/FNKSAdpter/*.framework'
+     s.dependency 'FNSDK-iOS/FNSDK'
   end
   
   
@@ -189,7 +186,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'FNCSJAdpter' do |s|
      s.ios.deployment_target = '9.0'
      s.vendored_frameworks =  'FNSDK/FNCSJAdpter/FNCSJAdpter.framework'
-           s.dependency 'FNSDK-iOS/FNSDK'
+    s.dependency 'FNSDK-iOS/FNSDK'
      s.dependency 'Ads-CN', '4.1.0.2'
   end
   
@@ -199,7 +196,7 @@ Pod::Spec.new do |spec|
      s.ios.deployment_target = '9.0'
      s.vendored_frameworks =  'FNSDK/FNYXAdpter/*.framework'
      s.resource = 'FNSDK/FNYXAdpter/XibAndPng.bundle'
-           s.dependency 'FNSDK-iOS/FNSDK'
+     s.dependency 'FNSDK-iOS/FNSDK'
   end
   
   
