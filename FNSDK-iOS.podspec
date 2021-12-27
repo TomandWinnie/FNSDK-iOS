@@ -138,10 +138,9 @@ Pod::Spec.new do |spec|
 
  # 核心模块
   spec.subspec 'FNSDK' do |s|
-    s.frameworks   = "MessageUI","iAd","ImageIO","SystemConfiguration","WebKit","MobileCoreServices", "SafariServices","CoreTelephony","CoreLocation","AVFoundation","CoreGraphics","MediaPlayer",
-    "AdSupport","CoreMedia","CFNetwork", "CoreMotion","CoreServices", "StoreKit","Security","Photos"
+    s.frameworks   = "MessageUI","iAd","ImageIO","SystemConfiguration","WebKit","MobileCoreServices", "SafariServices","CoreTelephony","CoreLocation","AVFoundation","CoreGraphics","MediaPlayer","AdSupport","CoreMedia","CFNetwork", "CoreMotion","CoreServices", "StoreKit","Security","Photos", "JavaScriptCore", "AudioToolBox","CoreData","Accelerate", "AVKit", "QuickLook"
     s.weak_framework = 'WebKit', 'UIKit', 'Foundation'
-    s.libraries    = "c++", "sqlite3.0", "z", "xml2", "resolv.9"
+    s.libraries    = "c++", "sqlite3.0", "z", "xml2", "resolv.9", "c++abi"
     s.vendored_frameworks =  'FNSDK/FNAdSDK.framework'
 
   end
