@@ -179,6 +179,7 @@ Pod::Spec.new do |spec|
      s.ios.deployment_target = '9.0'
      s.vendored_frameworks =  'FNSDK/FNKSAdpter/*.framework'
      s.dependency 'FNSDK-iOS/FNSDK'
+    # s.dependency 'KSAdSDKFull', '3.3.26'
   end
   
   
