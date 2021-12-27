@@ -137,7 +137,7 @@ Pod::Spec.new do |spec|
 
 
  # 核心模块
-  spec.subspec 'FNAdSDK' do |s|
+  spec.subspec 'FNSDK' do |s|
     s.frameworks   = "MessageUI","iAd","ImageIO","SystemConfiguration","WebKit","MobileCoreServices", "SafariServices","CoreTelephony","CoreLocation","AVFoundation","CoreGraphics","MediaPlayer",
     "AdSupport","CoreMedia","CFNetwork", "CoreMotion","CoreServices", "StoreKit","Security","Photos"
     s.weak_framework = 'WebKit', 'UIKit', 'Foundation'
