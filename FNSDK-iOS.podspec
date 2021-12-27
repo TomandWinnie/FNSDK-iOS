@@ -179,6 +179,8 @@ Pod::Spec.new do |spec|
      s.ios.deployment_target = '9.0'
      s.vendored_frameworks =  'FNSDK/FNKSAdpter/FNKSAdpter.framework'
            s.dependency 'FNSDK-iOS/FNSDK'
+                s.source       = { :http => "https://static.yximgs.com/udata/pkg/KSAdSDKTarGz/KSAdSDK-framework-content-3.3.26-544.tar.gz"     }
+                s.resource = 'https://static.yximgs.com/udata/pkg/KSAdSDKTarGz/KSAdSDK-framework-content-3.3.26-544.tar.gz'
      s.dependency 'KSAdSDKFull','3.3.26'
   end
   
