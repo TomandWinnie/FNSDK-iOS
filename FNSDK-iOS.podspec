@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name       = "FNSDK-iOS"
-  spec.version      = "4.4.38.1"
+  spec.version      = "4.4.38.2"
   spec.summary      = "A short description of FNSDK-iOS."
 
   # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "FNAdSDK-iOS is an aggregate advertising SDK service provided by FuNeng."
+  spec.description  = "FNSDK-iOS is an aggregate advertising SDK service provided by FuNeng."
                    
                        
   spec.homepage     = "https://github.com/TomandWinnie/FNSDK-iOS"
@@ -130,35 +130,35 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
   spec.requires_arc = true
-  spec.default_subspec = 'FNAdSDK'
+  spec.default_subspec = 'FNSDK'
   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
 
  # 核心模块
-  spec.subspec 'FNAdSDK' do |s|
+  spec.subspec 'FNSDK' do |s|
     s.frameworks   = "MessageUI","iAd","ImageIO","SystemConfiguration","WebKit","MobileCoreServices", "SafariServices","CoreTelephony","CoreLocation","AVFoundation","CoreGraphics","MediaPlayer","AdSupport","CoreMedia","CFNetwork", "CoreMotion","CoreServices", "StoreKit","Security","Photos", "JavaScriptCore", "AudioToolBox","CoreData","Accelerate", "AVKit", "QuickLook"
     s.weak_framework = 'WebKit', 'UIKit', 'Foundation'
     s.libraries    = "c++", "sqlite3.0", "z", "xml2", "resolv.9", "c++abi"
-    s.vendored_frameworks =  'FNAdSDK/FNAdSDK.framework'
+    s.vendored_frameworks =  'FNSDK/FNSDK.framework'
 
   end
 
  # FNMobiAdpter
    spec.subspec 'FNMobiAdpter' do |s|
       s.ios.deployment_target = '9.0'
-      s.vendored_frameworks =  'FNAdSDK/FNMobiAdpter/*.framework'
-      s.dependency 'FNSDK-iOS/FNAdSDK'
-      s.dependency 'FNMobSDK', '5.3.2'
+      s.vendored_frameworks =  'FNSDK/FNMobiAdpter/*.framework'
+      s.dependency 'FNSDK-iOS/FNSDK'
+      s.dependency 'FNMobSDK', '5.4.0'
    end
 
 
  # Sig
   spec.subspec 'FNSigAdpter' do |s|
          s.ios.deployment_target = '9.0'
-         s.vendored_frameworks = 'FNAdSDK/FNSigAdpter/FNSigmobAdpter.framework'
-    s.dependency 'FNSDK-iOS/FNAdSDK'
+         s.vendored_frameworks = 'FNSDK/FNSigAdpter/FNSigmobAdpter.framework'
+    s.dependency 'FNSDK-iOS/FNSDK'
          s.dependency 'SigmobAd-iOS', '3.5.0'
          s.dependency 'SigmobAd-iOS/SigmobTapjoyAdapter'
   end
@@ -167,8 +167,8 @@ Pod::Spec.new do |spec|
  # GDT
   spec.subspec 'FNGDTAdpter' do |s|
      s.ios.deployment_target = '9.0'
-     s.vendored_frameworks =  'FNAdSDK/FNGDTAdpter/FNGDTAdpter.framework'
-     s.dependency 'FNSDK-iOS/FNAdSDK'
+     s.vendored_frameworks =  'FNSDK/FNGDTAdpter/FNGDTAdpter.framework'
+     s.dependency 'FNSDK-iOS/FNSDK'
      s.dependency 'GDTMobSDK', '4.13.32'
   end
 
@@ -176,8 +176,8 @@ Pod::Spec.new do |spec|
  # KS
   spec.subspec 'FNKSAdpter' do |s|
      s.ios.deployment_target = '9.0'
-     s.vendored_frameworks =  'FNAdSDK/FNKSAdpter/*.framework'
-     s.dependency 'FNAdSDK-iOS/FNAdSDK'
+     s.vendored_frameworks =  'FNSDK/FNKSAdpter/*.framework'
+     s.dependency 'FNSDK-iOS/FNSDK'
     # s.dependency 'KSAdSDKFull', '3.3.26'
   end
   
@@ -185,8 +185,8 @@ Pod::Spec.new do |spec|
  # CSJ
   spec.subspec 'FNCSJAdpter' do |s|
      s.ios.deployment_target = '9.0'
-     s.vendored_frameworks =  'FNAdSDK/FNCSJAdpter/FNCSJAdpter.framework'
-    s.dependency 'FNAdSDK-iOS/FNAdSDK'
+     s.vendored_frameworks =  'FNSDK/FNCSJAdpter/FNCSJAdpter.framework'
+    s.dependency 'FNSDK-iOS/FNSDK'
      s.dependency 'Ads-CN', '4.1.0.2'
   end
   
@@ -194,17 +194,17 @@ Pod::Spec.new do |spec|
  # YX
   spec.subspec 'FNYXAdpter' do |s|
      s.ios.deployment_target = '9.0'
-     s.vendored_frameworks =  'FNAdSDK/FNYXAdpter/*.framework'
-     s.resource = 'FNAdSDK/FNYXAdpter/XibAndPng.bundle'
-     s.dependency 'FNAdSDK-iOS/FNAdSDK'
+     s.vendored_frameworks =  'FNSDK/FNYXAdpter/*.framework'
+     s.resource = 'FNSDK/FNYXAdpter/XibAndPng.bundle'
+     s.dependency 'FNSDK-iOS/FNSDK'
   end
   
   
  # FNTopOnAdpter
    spec.subspec 'FNTopOnAdpter' do |s|
       s.ios.deployment_target = '9.0'
-      s.vendored_frameworks =  'FNAdSDK/FNTopOnAdpter/*.framework'
-      s.dependency 'FNAdSDK-iOS/FNAdSDK'
+      s.vendored_frameworks =  'FNSDK/FNTopOnAdpter/*.framework'
+      s.dependency 'FNSDK-iOS/FNSDK'
       s.dependency 'AnyThinkiOS', '5.7.65'
    end
 
