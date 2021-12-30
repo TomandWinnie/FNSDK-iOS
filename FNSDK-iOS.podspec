@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name       = "FNSDK-iOS"
-  spec.version      = "4.4.38.2"
+  spec.version      = "4.4.38.3"
   spec.summary      = "A short description of FNSDK-iOS."
 
   # This description is used to generate tags and improve search results.
@@ -141,7 +141,7 @@ Pod::Spec.new do |spec|
     s.frameworks   = "MessageUI","iAd","ImageIO","SystemConfiguration","WebKit","MobileCoreServices", "SafariServices","CoreTelephony","CoreLocation","AVFoundation","CoreGraphics","MediaPlayer","AdSupport","CoreMedia","CFNetwork", "CoreMotion","CoreServices", "StoreKit","Security","Photos", "JavaScriptCore", "AudioToolBox","CoreData","Accelerate", "AVKit", "QuickLook"
     s.weak_framework = 'WebKit', 'UIKit', 'Foundation'
     s.libraries    = "c++", "sqlite3.0", "z", "xml2", "resolv.9", "c++abi"
-    s.vendored_frameworks =  'FNSDK/FNSDK.framework'
+    s.vendored_frameworks =  'FNSDK/FNAdSDK.framework'
 
   end
 
