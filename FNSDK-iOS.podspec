@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name       = "FNSDK-iOS"
-  spec.version      = "4.4.38.3"
+  spec.version      = "4.4.38.4"
   spec.summary      = "A short description of FNSDK-iOS."
 
   # This description is used to generate tags and improve search results.

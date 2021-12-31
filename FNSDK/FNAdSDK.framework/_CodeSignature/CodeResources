@@ -8,17 +8,9 @@
 		<data>
 		suxCVGuNeFOmN3EthYNhqC1UinM=
 		</data>
-		<key>Headers/FNAdRewardDelegate.h</key>
-		<data>
-		9lV6Z5o/sjy4zIKVTic7Ad6lkas=
-		</data>
 		<key>Headers/FNAdSDK.h</key>
 		<data>
 		0C1yu6+Bv6lRQvqUQ0XLedEGz9o=
-		</data>
-		<key>Headers/FNDrawAdObject.h</key>
-		<data>
-		+vQIKFj4eiQ532YRpKoYbF+Cwa8=
 		</data>
 		<key>Headers/FNInitalizeBanner.h</key>
 		<data>
@@ -78,17 +70,6 @@
 			aZWQtQyiiPOtLOu7EF9uRGMymfmhLXpyRE7U+xCQ7Y0=
 			</data>
 		</dict>
-		<key>Headers/FNAdRewardDelegate.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9lV6Z5o/sjy4zIKVTic7Ad6lkas=
-			</data>
-			<key>hash2</key>
-			<data>
-			DrryptUYGrgnOFoVW3U849+XXD5MHsLF6OCFsmjumqU=
-			</data>
-		</dict>
 		<key>Headers/FNAdSDK.h</key>
 		<dict>
 			<key>hash</key>
@@ -98,17 +79,6 @@
 			<key>hash2</key>
 			<data>
 			C9y4XZ3/qB745PZFO06Oznlp13CZFF52BcfvhFRC5q4=
-			</data>
-		</dict>
-		<key>Headers/FNDrawAdObject.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+vQIKFj4eiQ532YRpKoYbF+Cwa8=
-			</data>
-			<key>hash2</key>
-			<data>
-			RL5yHO7g8NX6/kYjZj2BTf2E4wMbYcO1GB2yBaQcgo4=
 			</data>
 		</dict>
 		<key>Headers/FNInitalizeBanner.h</key>
